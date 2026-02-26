@@ -1,25 +1,25 @@
 class OpFast < Formula
-  desc "1Password CLI proxy for instant access to secrets."
+  desc "1Password CLI proxy for instant access to secrets"
   homepage "https://github.com/cometkim/op-fast"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cometkim/op-fast/releases/download/v0.1.0/op-fast-aarch64-apple-darwin.tar.xz"
-      sha256 "abfca3a47be3331f237cba0af2d171d69e9c0d156d5d05b51852443474b61192"
+      url "https://github.com/cometkim/op-fast/releases/download/v0.1.1/op-fast-aarch64-apple-darwin.tar.xz"
+      sha256 "6b20f4fc651ac73228a503ee5e3e121ad88c2d943d04037d6de6cfe0b87e6e6f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cometkim/op-fast/releases/download/v0.1.0/op-fast-x86_64-apple-darwin.tar.xz"
-      sha256 "1c42682009046afc3ae5d0604376bf6ac5af9e79986220a4b9b283ebf8e63ea5"
+      url "https://github.com/cometkim/op-fast/releases/download/v0.1.1/op-fast-x86_64-apple-darwin.tar.xz"
+      sha256 "8bad625e12e8e87d4989b9c532f7ee3bffaf5d8ee582d7531eb8fe33aee03b83"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/cometkim/op-fast/releases/download/v0.1.0/op-fast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ff36bd10a951d8fccbaa1445b845fd78a4071ecc8ca97fad9235a211f9e66cc8"
+      url "https://github.com/cometkim/op-fast/releases/download/v0.1.1/op-fast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "59622b22f76fe1ff54fec06dc214b192b6878cf6dd596a972f11e9a7d1461ca5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cometkim/op-fast/releases/download/v0.1.0/op-fast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1fd42d3548a68a49e181029ddea9ce080472d3c303e5cb623383ea21ea4c6ee8"
+      url "https://github.com/cometkim/op-fast/releases/download/v0.1.1/op-fast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a480a09ef344b7503a26f3b173891350a4d3bc465f6dcdd7b0f51735554c65f8"
     end
   end
   license "MIT"
